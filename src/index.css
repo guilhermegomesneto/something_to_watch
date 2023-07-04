@@ -1,0 +1,31 @@
+:root {
+    --color-1: #D4AF37;
+    --color-2: #0A1828;
+    --color-3: #fcfcfc;
+    --color-4: #ebc23f;
+    --color-5: #39506b;
+    --color-6: #178582;
+    --color-7: #06090c;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-3);
+    background-color: var(--color-2);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--color-4);
+}
