@@ -19,10 +19,10 @@
 
 #navbar input {
     padding: 0.2rem 0.4rem;
-    border: none;
+    border-color: var(--color-1);
     border-radius: 8px;
     color: var(--color-3);
-    background-color: var(--color-8);
+    background-color: var(--color-7);
 }
 
 #navbar form button {
