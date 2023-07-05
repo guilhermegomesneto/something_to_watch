@@ -2,11 +2,29 @@
     --color-1: #D4AF37;
     --color-2: #0A1828;
     --color-3: #fcfcfc;
-    --color-4: #ebc23f;
+    --color-4: #facf44;
     --color-5: #39506b;
     --color-6: #178582;
     --color-7: #06090c;
+    --color-8: #122a46;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--color-7);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: var(--color-1);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-4);
+  }
 
 * {
     font-family: 'Roboto', sans-serif;

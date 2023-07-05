@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import MovieCard from "../components/MovieCard";
+
+import "./MovieGrid.css"
 
 const moviesURL = import.meta.env.VITE_API_MOVIE;
 const tmdbKey = import.meta.env.VITE_API_KEY;
@@ -24,7 +27,7 @@ const Home = () => {
       <h2 className="title">Movies in Theaters Now</h2>
       <div className="movies-container">
         {nowPlaying.length === 0 && <p>Loading...</p>}
-        {nowPlaying.length > 0 && nowPlaying.map((movie) => <p>{movie.title}</p>)}
+        {nowPlaying.length > 0 && nowPlaying.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </div>
     </div>
   );
