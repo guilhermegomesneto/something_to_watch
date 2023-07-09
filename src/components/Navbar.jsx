@@ -23,24 +23,13 @@ const Navbar = () => {
           <Link to="/"><BiMoviePlay /> Something to Watch</Link>
         </h2>
         <h3>
-          <Link to="/">Popular</Link>
+          <Link to="trending">Trending</Link>
         </h3>
-        <div className="menu">
-          <h3>
-            <Link to="/">Top Rated</Link>
-          </h3>
-          <nav className="menu-dropdown">
-            <Link to="/">Action</Link>
-            <Link to="/">Animation</Link>
-            <Link to="/">Comedy</Link>
-            <Link to="/">Drama</Link>
-            <Link to="/">Fantasy</Link>
-            <Link to="/">Horror</Link>
-            <Link to="/">Sci-Fi</Link>
-          </nav>
-        </div>
         <h3>
-          <Link to="/">Upcoming</Link>
+          <Link to="top-rated">Top Rated</Link>
+        </h3>
+        <h3>
+          <Link to="upcoming">Upcoming</Link>
         </h3>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Search for a movie" onChange={(e) => setSearch(e.target.value)} value={search} />

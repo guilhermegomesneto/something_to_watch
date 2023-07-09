@@ -6,7 +6,7 @@ import "./MovieGrid.css";
 const moviesURL = import.meta.env.VITE_API_MOVIE;
 const tmdbKey = import.meta.env.VITE_API_KEY;
 
-const Home = () => {
+const TopRated = () => {
   const [movies, setMovies] = useState([]);
   const [selectedGenre, setSelectedGenre] = useState(null);
   const [genres, setGenres] = useState([]);
@@ -14,7 +14,7 @@ const Home = () => {
   const getMovies = async (url) => {
     const res = await fetch(url);
     const data = await res.json();
-  
+
     setMovies(data.results);
   }
 
@@ -32,14 +32,14 @@ const Home = () => {
   }
 
   useEffect(() => {
-    const pageURL = `${moviesURL}now_playing?${tmdbKey}`;
+    const pageURL = `${moviesURL}top_rated?${tmdbKey}`;
 
     getMovies(pageURL);
     getGenres();
   }, [])
 
   useEffect(() => {
-    let pageURL = `${moviesURL}now_playing?${tmdbKey}`;
+    let pageURL = `${moviesURL}top_rated?${tmdbKey}`;
 
     if (selectedGenre) {
       pageURL += `&with_genres=${selectedGenre}`;
@@ -50,7 +50,7 @@ const Home = () => {
 
   return (
     <div className="container">
-      <h2 className="title">Movies in Theaters Now</h2>
+      <h2 className="title">Top Rated Movies</h2>
 
       <div className="filter">
         {genres.length > 0 && (
@@ -71,4 +71,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default TopRated;
