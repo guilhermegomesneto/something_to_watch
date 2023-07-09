@@ -2,11 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     background-color: var(--color-7);
 }
 
 #navbar h2 a {
+    font-size: 1.75rem;
     display: flex;
     align-items: center;
     gap: 0.35rem;
@@ -41,32 +42,4 @@
 
 #navbar form button:hover {
     background-color: var(--color-4);
-}
-
-.menu {
-    position: relative;
-    display: inline-block;
-}
-
-.menu-dropdown {
-    display: none;
-    position: absolute;
-    box-shadow: 5px 5px 10px black;
-    z-index: 1;
-    background-color: var(--color-8);
-}
-
-.menu-dropdown a {
-    display: block;
-    padding: 6px;
-    font-weight: bold;
-    border: 1px solid black;
-}
-
-.menu-dropdown a:hover {
-    background-color: var(--color-7);
-}
-
-.menu:hover .menu-dropdown {
-    display: block;
 }

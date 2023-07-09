@@ -1,0 +1,41 @@
+.movie-content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 3vw;
+    margin: 3vw;
+    padding: 3vw;
+    background-color: var(--color-7);
+    box-shadow: 4px 4px 10px black;
+}
+
+.poster {
+    width: 25vw;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main-title {
+    color: var(--color-1);
+    margin-bottom: 1rem;
+}
+
+.sub-title {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--color-1);
+}
+
+.sub-title svg {
+    padding-bottom: 0.07rem;
+}
+
+.text {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
