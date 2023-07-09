@@ -15,7 +15,7 @@ const Footer = () => {
         </p>
 
         <p>
-            Something to Watch uses the TMDb API but is not endorsed or certified by TMDb.
+            Something to Watch uses the TMDb API but is not endorsed or certified by TMDb
         </p>
     </div>
   );
