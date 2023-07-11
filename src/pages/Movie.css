@@ -1,6 +1,6 @@
 .movie-content {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 3vw;
     margin: 3vw;
@@ -38,4 +38,54 @@
 .text {
     text-align: justify;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .movie-content {
+        flex-direction: column;
+        margin: 5vw;
+        padding: 5vw;
+    }
+    
+    .poster {
+        width: 100%;
+    }
+    
+    .movie-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .main-title {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 912px) {
+
+    .movie-content {
+        flex-direction: column;
+        margin: 5vw;
+        padding: 5vw;
+    }
+    
+    .poster {
+        width: 40vw;
+    }
+    
+    .movie-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .main-title {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
 }

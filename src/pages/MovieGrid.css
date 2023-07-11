@@ -79,3 +79,36 @@
 .release-date {
     font-style: italic;
 }
+
+/* Breakpoints */
+
+@media screen and (max-width: 480px) {
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .movies-container {
+        padding: 0.5rem 1rem 0 1rem;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    
+    .movies-container div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 912px) {
+
+    .movies-container {
+        max-width: 912px;
+    }
+    
+    .movies-container div {
+        width: 30%;
+    }
+
+}
