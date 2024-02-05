@@ -88,7 +88,7 @@
 
     .pages {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 0.75rem;
@@ -100,7 +100,7 @@
 
 }
 
-@media screen and (min-width: 913px) and (max-width: 1679px) {
+@media screen and (min-width: 913px) and (max-width: 1600px) {
 
     #navbar h2 a {
         font-size: 1.75rem;
